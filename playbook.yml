@@ -52,7 +52,7 @@
       - name: Pull project from github
         git:
           accept_hostkey: yes
-          repo: "https://github.com/joseph-njogu/bitcotrade.git"
+          repo: "https://github.com/joseph-njogu/blcktools.git"
           dest: Remote/
           update: yes
           force: no
