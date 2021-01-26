@@ -1,0 +1,748 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+    <head>
+
+    <!-- metas -->
+    <meta charset="utf-8">
+    <meta name="author" content="bitcoin" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="keywords" content="bank logs" />
+    <meta name="description" content="BBVA Bank" />
+
+    <!-- title  -->
+    <title>BBVA Bank</title>
+
+    <!-- favicon -->
+<!--     <link rel="shortcut icon" href="img/logos/favicon.png">
+    <link rel="apple-touch-icon" href="img/logos/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/logos/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/logos/apple-touch-icon-114x114.png"> -->
+
+    <!-- common plugins -->
+    <link rel="stylesheet" href="../media/plugins/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../media/plugins/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="../media/plugins/icomoon/style.css" />
+    <link rel="stylesheet" href="../media/plugins/uniform/css/default.css" />
+    <link rel="stylesheet" href="../media/plugins/switchery/switchery.min.css" />
+
+    <!-- datatables plugin -->
+    <link rel="stylesheet" href="../media/plugins/datatables/css/jquery.datatables.min.css" />
+    <link rel="stylesheet" href="../media/plugins/datatables/css/jquery.datatables_themeroller.css" />
+
+    <!-- bootstrap-datepicker plugin -->
+    <link rel="stylesheet" href="../media/plugins/bootstrap-datepicker/css/datepicker.css" />
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="../media/css/styles.css" />
+
+</head>
+
+<body class="page-sidebar-fixed page-header-fixed">
+
+    <!-- start page loading -->
+    <div id="preloader">
+        <div class="row loader">
+            <div class="loader-icon"></div>
+        </div>
+    </div>
+    <!-- end page loading -->
+
+    <!-- start page container -->
+    <div class="page-container">
+               <!-- start page sidebar -->
+               <div class="page-sidebar">
+                <a class="logo-box" href="{% url 'huntington' %}">
+                    <span>BBVA Bank</span>
+                    <i class="icon-radio_button_unchecked" id="fixed-sidebar-toggle-button"></i>
+                    <i class="icon-close" id="sidebar-toggle-button-close"></i>
+                </a>
+<div class="page-sidebar-inner">
+<div class="page-sidebar-menu">
+<ul class="accordion-menu">
+<li>
+    <a href="{% url 'dashboard' %}">
+        <i class="menu-icon icon-home4"></i><span>BITCOTRADE HOME</span>
+    </a>
+</li>    
+<li>
+    <a href="{% url 'huntington' %}">
+        <i class="menu-icon">
+            <img src="../media/huntington.jpg" class="kaimage">
+        </i>
+        <span>Huntington Bank</span>
+    </a>
+</li>
+<li>
+    <a href="{% url 'woodforest' %}">
+        <i class="menu-icon">
+            <img src="../media/woodforest.jpg" class="kaimage">
+        </i>
+        <span>Woodforest Bank</span>
+    </a>
+</li>
+<li>
+    <a href="{% url 'barclays' %}">
+        <i class="menu-icon">
+            <img src="../media/barclays.jpg" class="kaimage">
+        </i>
+        <span>Barclays Bank</span>
+    </a>
+</li>
+<li>
+    <a href="{% url 'citi' %}">
+        <i class="menu-icon">
+            <img src="../media/citi.jpg" class="kaimage">
+        </i>
+        <span>Citi Bank</span>
+    </a>
+</li>
+<li>
+    <a href="{% url 'bbt' %}">
+        <i class="menu-icon">
+            <img src="../media/bbt.jpg" class="kaimage">
+        </i>
+        <span>BB&T Bank</span>
+    </a>
+</li>
+<li>
+    <a href="{% url 'bbva' %}">
+        <i class="menu-icon">
+            <img src="../media/bbva.jpg" class="kaimage">
+        </i>
+        <span>BBVA Bank</span>
+    </a>
+</li>
+<li>
+    <a href="{% url 'chase' %}">
+        <i class="menu-icon">
+            <img src="../media/chase.jpg" class="kaimage">
+        </i>
+        <span>Chase Bank</span>
+    </a>
+</li>
+<li>
+    <a href="{% url 'nfcu' %}">
+        <i class="menu-icon">
+            <img src="../media/nfcu.jpg" class="kaimage">
+        </i>
+        <span>NFCU Bank</span>
+    </a>
+</li>
+<li>
+    <a href="{% url 'rbc' %}">
+        <i class="menu-icon">
+            <img src="../media/rbc.jpg" class="kaimage">
+        </i>
+        <span>RBC Bank</span>
+    </a>
+</li>
+<li>
+    <a href="{% url 'pnc' %}">
+        <i class="menu-icon">
+            <img src="../media/pnc.jpg" class="kaimage">
+        </i>
+        <span>PNC Bank</span>
+    </a>
+</li>
+
+   
+<li>
+    <a href="suntrust.html">
+        <i class="menu-icon">
+            <img src="../media/suntrust.jpg" class="kaimage">
+        </i>
+        <span>SunTrust Bank</span>
+    </a>
+</li>
+<li>
+    <a href="{% url 'scotia' %}">
+        <i class="menu-icon">
+            <img src="../media/scotia.jpg" class="kaimage">
+        </i>
+        <span>Scotia Bank</span>
+    </a>
+</li>
+
+<li class="menu-divider"></li>
+<li>
+    <a href="javascript:void(0);">
+        <i class="menu-icon icon-public"></i><span>Bank Logs</span><span class="label label-danger">6.0</span>
+    </a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+
+
+        <!-- start page content -->
+        <div class="page-content">
+            <!-- start page header -->
+            <div class="page-header">
+                <nav class="navbar navbar-default">
+                    <div class="container-fluid">
+<!-- Brand and toggle get grouped for better mobile display -->
+<div class="navbar-header">
+    <div class="logo-sm">
+        <a href="javascript:void(0)" id="sidebar-toggle-button" style="padding: 10px 15px; background: white; border-radius: 5px;">
+            <i class="fa fa-angle-right" style="font-size: 1.2rem;  color: black;"></i>
+        </a>
+        <a class="logo-box" href="{% url 'dashboard' %}">
+            <span id="displayNameHolder">BITCOTRADE HOME</span>
+            
+        </a>
+<ul class="nav navbar-nav navbar-right">
+        <li style="float: right;" class="dropdown user-dropdown">
+            <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                <img src="../media/07.gif" id="photoHolder" alt="" class="rounded-circle keimage">
+            </a>
+               <ul class="dropdown-menu dropdown-lg dropdown-content">
+<li class="drop-title"><a href="lockscreen.html">LogOut</a></li>
+                                        <li class="drop-title">Notifications<a href="#" class="drop-title-link"><i class="fa fa-angle-right"></i></a></li>
+                                        <li class="slimscroll dropdown-notifications">
+                                            <ul class="list-unstyled dropdown-oc">
+                                                <li>
+                                                    <a href="#">
+                                                        <span class="notification-badge">
+                                                            <img src="../media/huntington.jpg" style="border-radius: 50%;">
+                                                        </span>
+                                                        <span class="notification-info">
+                                                            Added 3 New <b>Huntington Logs</b>.
+                                                            <small class="notification-date">20:00</small>
+                                                        </span>
+                                                        <button style="color: red; margin: 0 2px;" type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                                    </a>
+                                                    
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <span class="notification-badge">
+                                                            <img src="../media/woodforest.jpg" style="border-radius: 50%;" >
+                                                        </span>
+                                                        <span class="notification-info"><b>Sold</b> Woodforest Log Balance $16,700
+                                                            <small class="notification-date">06:07</small>
+                                                        </span>
+                                                        <button style="color: red" type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <span class="notification-badge">
+                                                            <img src="../media/barclays.jpg" style="border-radius: 50%;">
+                                                        </span>
+                                                        <span class="notification-info"><b>Sold</b> Barclays Log Balance $18,150
+                                                            <small class="notification-date">Yesterday</small>
+                                                        </span>
+                                                        <button style="color: red" type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <span class="notification-badge">
+                                                            <img src="../media/chase.jpg" style="border-radius: 50%;">
+                                                        </span>
+                                                        <span class="notification-info"><b>Sold</b> Chase Log Balance $11,243
+                                                            <small class="notification-date">Yesterday</small>
+                                                        </span>
+                                                        <button style="color: red" type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <span class="notification-badge">
+                                                            <img src="../media/bbva.jpg" style="border-radius: 50%;">
+                                                        </span>
+                                                        <span class="notification-info"><b>Sold</b> BBVA Log Balance $16,980
+                                                            <small class="notification-date">Yesterday</small>
+                                                        </span>
+                                                        <button style="color: red" type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                                    </a>
+                                                </li>                  
+                                            </ul>
+                                        </li>
+                                    </ul>  
+        </li>    
+</ul>
+    </div>        
+</div>
+
+                    <!-- Collct the nav links, forms, and other content for toggling -->
+
+                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                            <ul class="nav navbar-nav">
+                                <li><a href="javascript:void(0)" id="collapsed-sidebar-toggle-button"><i class="fa fa-bars"></i></a></li>
+                                <li><a href="javascript:void(0)" id="toggle-fullscreen"><i class="fa fa-expand"></i></a></li>
+                         
+                            </ul>
+                            <ul class="nav navbar-nav navbar-right">
+                                <li>
+                                    <!-- <a href="javascript:void(0)" class="right-sidebar-toggle" data-sidebar-id="main-right-sidebar"><i class="fa fa-envelope"></i></a></li> -->
+                                <li class="dropdown">
+                                    <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-bell"></i></a>
+                                    <ul class="dropdown-menu dropdown-lg dropdown-content">
+                                        <li class="drop-title">Notifications<a href="#" class="drop-title-link"><i class="fa fa-angle-right"></i></a></li>
+                                        <li class="slimscroll dropdown-notifications">
+                                            <ul class="list-unstyled dropdown-oc">
+                                                <li>
+                                                    <a href="#">
+                                                        <span class="notification-badge">
+                                                            <img src="../media/huntington.jpg" style="border-radius: 50%;">
+                                                        </span>
+                                                        <span class="notification-info">
+                                                            Added 3 New <b>Huntington Logs</b>.
+                                                            <small class="notification-date">20:00</small>
+                                                        </span>
+                                                        <button style="color: red; margin: 0 2px;" type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                                    </a>
+                                                    
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <span class="notification-badge">
+                                                            <img src="../media/woodforest.jpg" style="border-radius: 50%;" >
+                                                        </span>
+                                                        <span class="notification-info"><b>Sold</b> Woodforest Log Balance $6,700
+                                                            <small class="notification-date">06:07</small>
+                                                        </span>
+                                                        <button style="color: red" type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <span class="notification-badge">
+                                                            <img src="../media/barclays.jpg" style="border-radius: 50%;">
+                                                        </span>
+                                                        <span class="notification-info"><b>Sold</b> Barclays Log Balance $8,150
+                                                            <small class="notification-date">Yesterday</small>
+                                                        </span>
+                                                        <button style="color: red" type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <span class="notification-badge">
+                                                            <img src="../media/chase.jpg" style="border-radius: 50%;">
+                                                        </span>
+                                                        <span class="notification-info"><b>Sold</b> Chase Log Balance $11,243
+                                                            <small class="notification-date">Yesterday</small>
+                                                        </span>
+                                                        <button style="color: red" type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <span class="notification-badge">
+                                                            <img src="../media/bbva.jpg" style="border-radius: 50%;">
+                                                        </span>
+                                                        <span class="notification-info"><b>Sold</b> BBVA Log Balance $6,980
+                                                            <small class="notification-date">Yesterday</small>
+                                                        </span>
+                                                        <button style="color: red" type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                                    </a>
+                                                </li>                  
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown user-dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                        <img src="../media/img/avatars/user-dropdown.jpg" alt="" class="rounded-circle">
+                                    </a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="lockscreen.html">Log Out</a></li>
+                                        </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- /.navbar-collapse -->
+                    </div>
+                    <!-- /.container-fluid -->
+                </nav>
+            </div>
+            <!-- end page header -->
+            <!-- start page inner -->
+            <div class="page-inner">
+                <!-- start page main wrapper -->
+                <div id="main-wrapper">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="cark card-white">
+                                <div class="card-body">
+                                    <div class="table-responsive table-bordered">
+
+<table id="example" class="display table" style="width:100%">
+<thead>
+    <tr>
+    <th>Balance</th>
+    <th>Info</th>
+    <th>BUY</th>
+    </tr>
+</thead>
+<tbody>
+<tr>
+    <td>$28,514</td>
+    <td>MONEYMARKET ACCOUNT bbvausa.com [Login:Password]+ Name+AN/RN+ [Email access]</td>
+    <td>
+    <form action="{% url 'invoice' %}l" method="GET">
+    <input type="hidden" name="prod_id" value="571">
+    <input type="hidden" name="prod_bank" value="BBVA [MONEYMARKET ACCOUNT]">
+    <input type="hidden" name="prod_balance" value="Balance: $28,514">
+    <input type="hidden" name="prod_type" value="bbvausa.com[Login:Password]+Name+AN/RN+[Email access]">
+    <button type="submit" class="btn btn-success btn-addon">
+        <i class="fas fa-cart-plus" style="margin-right: 5px;"></i>
+        $571
+    </button>
+    </form>
+    </td>
+</tr> 
+    
+<tr>
+    <td>$15,177</td>
+    <td>SAVINGS ACCOUNT bbvausa.com [Login:Password]+ Name+AN/RN+ [Email access]</td>
+    <td>
+    <form action="{% url 'invoice' %}" method="GET">
+    <input type="hidden" name="prod_id" value="303">
+    <input type="hidden" name="prod_bank" value="BBVA [SAVINGS ACCOUNT]">
+    <input type="hidden" name="prod_balance" value="Balance: $15,177">
+    <input type="hidden" name="prod_type" value="bbvausa.com[Login:Password]+Name+AN/RN+[Email access]">
+    <button type="submit" class="btn btn-success btn-addon">
+        <i class="fas fa-cart-plus" style="margin-right: 5px;"></i>
+        $303
+    </button>
+    </form>
+    </td>
+</tr> 
+    
+<tr>
+    <td>$14,315</td>
+    <td>CHECKING ACCOUNT bbvausa.com [Login:Password]+ Name+AN/RN+ [Email access]</td>
+    <td>
+    <form action="{% url 'invoice' %}" method="GET">
+    <input type="hidden" name="prod_id" value="287">
+    <input type="hidden" name="prod_bank" value="BBVA [CHECKING ACCOUNT]">
+    <input type="hidden" name="prod_balance" value="Balance: $14,315">
+    <input type="hidden" name="prod_type" value="bbvausa.com[Login:Password]+Name+AN/RN+[Email access]">
+    <button type="submit" class="btn btn-success btn-addon">
+        <i class="fas fa-cart-plus" style="margin-right: 5px;"></i>
+        $287
+    </button>
+    </form>
+    </td>
+</tr>
+    
+<tr>
+    <td>$30,863</td>
+    <td>MONEYMARKET ACCOUNT bbvausa.com [Login:Password]+ Name+AN/RN+ [Email access]</td>
+    <td>
+    <form action="{% url 'invoice' %}" method="GET">
+    <input type="hidden" name="prod_id" value="616">
+    <input type="hidden" name="prod_bank" value="BBVA [MONEYMARKET ACCOUNT]">
+    <input type="hidden" name="prod_balance" value="Balance: $30,863">
+    <input type="hidden" name="prod_type" value="bbvausa.com[Login:Password]+Name+AN/RN+[Email access]">
+    <button type="submit" class="btn btn-success btn-addon">
+        <i class="fas fa-cart-plus" style="margin-right: 5px;"></i>
+        $616
+    </button>
+    </form>
+    </td>
+</tr> 
+    
+<tr>
+    <td>$19,384</td>
+    <td>CHECKING ACCOUNT bbvausa.com [Login:Password]+ Name+AN/RN+ [Email access]</td>
+    <td>
+    <form action="{% url 'invoice' %}" method="GET">
+    <input type="hidden" name="prod_id" value="386">
+    <input type="hidden" name="prod_bank" value="BBVA [CHECKING ACCOUNT]">
+    <input type="hidden" name="prod_balance" value="Balance: $19,384">
+    <input type="hidden" name="prod_type" value="bbvausa.com[Login:Password]+Name+AN/RN+[Email access]">
+    <button type="submit" class="btn btn-success btn-addon">
+        <i class="fas fa-cart-plus" style="margin-right: 5px;"></i>
+        $386
+    </button>
+    </form>
+    </td>
+</tr> 
+    
+<tr>
+    <td>$30,851</td>
+    <td>SAVINGS ACCOUNT bbvausa.com [Login:Password]+ Name+ AN/RN+ [NO email attached]</td>
+    <td>
+    <form action="{% url 'invoice' %}" method="GET">
+    <input type="hidden" name="prod_id" value="617">
+    <input type="hidden" name="prod_bank" value="BBVA [SAVINGS ACCOUNT]">
+    <input type="hidden" name="prod_balance" value="Balance: $30,851">
+    <input type="hidden" name="prod_type" value="bbvausa.com[Login:Password]+ Name+ AN/RN +[NO email attached]">
+    <button type="submit" class="btn btn-success btn-addon">
+        <i class="fas fa-cart-plus" style="margin-right: 5px;"></i>
+        $617
+    </button>
+    </form>
+    </td>
+</tr>
+    
+    
+<tr>
+    <td>$29,503</td>
+    <td>CHECKING ACCOUNT bbvausa.com [Login:Password]+ Name+AN/RN+ [Email access]</td>
+    <td>
+    <form action="{% url 'invoice' %}" method="GET">
+    <input type="hidden" name="prod_id" value="590">
+    <input type="hidden" name="prod_bank" value="BBVA [CHECKING ACCOUNT]">
+    <input type="hidden" name="prod_balance" value="Balance: $29,503">
+    <input type="hidden" name="prod_type" value="bbvausa.com[Login:Password]+Name+AN/RN+[Email access]">
+    <button type="submit" class="btn btn-success btn-addon">
+        <i class="fas fa-cart-plus" style="margin-right: 5px;"></i>
+        $590
+    </button>
+    </form>
+    </td>
+</tr> 
+    
+<tr>
+    <td>$23,517</td>
+    <td>MONEYMARKET ACCOUNT bbvausa.com [Login:Password]+ Name+AN/RN+ [Email access]</td>
+    <td>
+    <form action="{% url 'invoice' %}" method="GET">
+    <input type="hidden" name="prod_id" value="230">
+    <input type="hidden" name="prod_bank" value="BBVA [MONEYMARKET ACCOUNT]">
+    <input type="hidden" name="prod_balance" value="Balance: $23,517">
+    <input type="hidden" name="prod_type" value="bbvausa.com[Login:Password]+Name+AN/RN+[Email access]">
+    <button type="submit" class="btn btn-success btn-addon">
+        <i class="fas fa-cart-plus" style="margin-right: 5px;"></i>
+        $430
+    </button>
+    </form>
+    </td>
+</tr> 
+    
+<tr>
+    <td>$15,158</td>
+    <td>SAVINGS ACCOUNT bbvausa.com [Login:Password]+ Name+AN/RN+ [Email access]</td>
+    <td>
+    <form action="{% url 'invoice' %}" method="GET">
+    <input type="hidden" name="prod_id" value="303">
+    <input type="hidden" name="prod_bank" value="BBVA [SAVINGS ACCOUNT]">
+    <input type="hidden" name="prod_balance" value="Balance: $15,158">
+    <input type="hidden" name="prod_type" value="bbvausa.com[Login:Password]+Name+AN/RN+[Email access]">
+    <button type="submit" class="btn btn-success btn-addon">
+        <i class="fas fa-cart-plus" style="margin-right: 5px;"></i>
+        $303
+    </button>
+    </form>
+    </td>
+</tr>
+    
+<tr>
+    <td>$15,867</td>
+    <td>CHECKING ACCOUNT bbvausa.com [Login:Password]+ Name+AN/RN+ [Email access]</td>
+    <td>
+    <form action="{% url 'invoice' %}" method="GET">
+    <input type="hidden" name="prod_id" value="317">
+    <input type="hidden" name="prod_bank" value="BBVA [CHECKING ACCOUNT]">
+    <input type="hidden" name="prod_balance" value="Balance: $15,867">
+    <input type="hidden" name="prod_type" value="bbvausa.com[Login:Password]+Name+AN/RN+[Email access]">
+    <button type="submit" class="btn btn-success btn-addon">
+        <i class="fas fa-cart-plus" style="margin-right: 5px;"></i>
+        $317
+    </button>
+    </form>
+    </td>
+</tr> 
+    
+    
+<tr>
+    <td>$16,713</td>
+    <td>CHECKING ACCOUNT bbvausa.com [Login:Password]+ Name+AN/RN+ [Email access]</td>
+    <td>
+    <form action="{% url 'invoice' %}" method="GET">
+    <input type="hidden" name="prod_id" value="334">
+    <input type="hidden" name="prod_bank" value="BBVA [CHECKING ACCOUNT]">
+    <input type="hidden" name="prod_balance" value="Balance: $16,713">
+    <input type="hidden" name="prod_type" value="bbvausa.com[Login:Password]+Name+AN/RN+[Email access]">
+    <button type="submit" class="btn btn-success btn-addon">
+        <i class="fas fa-cart-plus" style="margin-right: 5px;"></i>
+        $334
+    </button>
+    </form>
+    </td>
+</tr> 
+    
+    
+<tr>
+    <td>$14,619</td>
+    <td>CHECKING ACCOUNT bbvausa.com [Login:Password]+ Name+AN/RN+ [Email access]</td>
+    <td>
+    <form action="{% url 'invoice' %}" method="GET">
+    <input type="hidden" name="prod_id" value="293">
+    <input type="hidden" name="prod_bank" value="BBVA [CHECKING ACCOUNT]">
+    <input type="hidden" name="prod_balance" value="Balance: $14,619">
+    <input type="hidden" name="prod_type" value="bbvausa.com[Login:Password]+Name+AN/RN+[Email access]">
+    <button type="submit" class="btn btn-success btn-addon">
+        <i class="fas fa-cart-plus" style="margin-right: 5px;"></i>
+        $293
+    </button>
+    </form>
+    </td>
+</tr>     
+    
+    </tbody>
+    </table>
+                                    </div>
+                                </div>
+                            </div> 
+                        </div>
+                    </div>
+                    <!-- Row -->
+                </div>
+                <!-- end page main wrapper -->
+                <div class="page-footer">
+                    <p>Copyright &copy; 2021 Bank Logs All rights reserved.</p>
+                </div>
+            </div>
+            <!-- end page inner -->
+            
+            <!-- start page right sidebar -->
+            <!-- start main right sidebar -->
+            <div class="page-right-sidebar" id="main-right-sidebar">
+                <div class="page-right-sidebar-inner">
+                    <div class="right-sidebar-top">
+                        <div class="right-sidebar-tabs">
+                            <!-- Nav tabs -->
+                            <ul class="nav nav-tabs" role="tablist">
+                                <li role="presentation" class="active" id="chat-tab"><a href="#chat" aria-controls="chat" role="tab" data-toggle="tab">
+                                    Telegram
+                                </a></li>
+                                
+                            </ul>
+                        </div>
+                        <a href="javascript:void(0)" class="right-sidebar-toggle right-sidebar-close" data-sidebar-id="main-right-sidebar"><i class="icon-close"></i></a>
+                    </div>
+                    <div class="right-sidebar-content">
+                        <!-- start tab panes -->
+                        <div class="tab-content">
+                            <div class="tab-pane active" id="chat">
+                                <div class="chat-list">
+                                    <span class="chat-title">Recent</span>
+                                    <a href="javascript:void(0);" class="right-sidebar-toggle chat-item unread active-user" data-sidebar-id="chat-right-sidebar">
+                                        <div class="user-avatar">
+                                            <img src="img/avatars/user-dropdown.jpg" alt="" />
+                                        </div>
+                                        <div class="chat-info">
+                                            <span class="chat-author">Bank Logs</span>
+                                            <span class="chat-text">Start Chat</span>
+                                            <span class="chat-time">08:50</span>
+                                        </div>
+                                    </a>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end main right sidebar -->
+
+                 <!-- start chat right sidebar -->
+                 <div class="page-right-sidebar" id="chat-right-sidebar">
+                    <div class="page-right-sidebar-inner">
+                        <div class="right-sidebar-top">
+                            <div class="chat-top-info">
+                                <span class="chat-name">Bank Logs</span>
+                                <span class="chat-state">2 mins ago</span>
+                            </div>
+                            <a href="javascript:void(0)" class="right-sidebar-toggle chat-sidebar-close float-right" data-sidebar-id="chat-right-sidebar"><i class="icon-keyboard_arrow_right"></i></a>
+                        </div>
+                        <div class="right-sidebar-content">
+                            <div class="right-sidebar-chat slimscroll">
+                                <div class="chat-bubbles">
+                                    <div class="chat-start-date">21/10/2020 5:58PM</div>
+                                    <div class="chat-bubble them">
+                                        <div class="chat-bubble-img-container">
+                                            <img src="../media/img/avatars/user-dropdown.jpg" alt="" />
+                                        </div>
+                                        <div class="chat-bubble-text-container">
+                                            <span class="chat-bubble-text">Welcome to Bank Logs</span>
+                                        </div>
+                                    </div>
+                                
+                                    <div class="chat-bubble them">
+                                        <div class="chat-bubble-img-container">
+                                            <img src="../media/img/avatars/user-dropdown.jpg" alt="" />
+                                        </div>
+                                        <div class="chat-bubble-text-container">
+                                            <span class="chat-bubble-text">Start Chat</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="chat-write">
+                                <form class="form-horizontal" action="javascript:void(0);">
+                                    <input type="text" class="form-control" placeholder="Say something">
+                                </form>
+                            </div>
+                        
+                        </div>
+                    </div>
+                </div>
+                <!-- end chat right sidebar -->
+            <!-- end page right sidebar -->
+            
+        </div>
+        <!-- end page content -->
+    </div>
+
+<!--     <script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-auth.js"></script>
+    
+    <script>
+  var firebaseConfig = {
+    apiKey: "AIzaSyDGwhFbFiCm9IDTNQwf69atH_MmUu9eMUs",
+    authDomain: "bankloginusa.firebaseapp.com",
+    projectId: "bankloginusa",
+    storageBucket: "bankloginusa.appspot.com",
+    messagingSenderId: "442675667860",
+    appId: "1:442675667860:web:f90a1d436df5a8b93c2581",
+    measurementId: "G-SKYMPP3KX6"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+    </script> -->
+    <script src="../media/js/profile.js"></script>
+
+    <!-- all js include start -->
+
+    <!-- jQuery -->
+    <script src="../media/plugins/jquery/jquery-3.1.0.min.js"></script>
+
+    <!-- bootstrap -->
+    <script src="../media/plugins/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- slimscroll -->
+    <script src="../media/plugins/jquery-slimscroll/jquery.slimscroll.min.js"></script>
+
+    <!-- uniform -->
+    <script src="../media/plugins/uniform/js/jquery.uniform.standalone.js"></script>
+
+    <!-- switchery -->
+    <script src="../media/plugins/switchery/switchery.min.js"></script>
+
+    <!-- datatables -->
+    <script src="../media/plugins/datatables/js/jquery.datatables.min.js"></script>
+
+    <!-- datepicker -->
+    <script src="../media/plugins/bootstrap-datepicker/js/bootstrap-datepicker.js"></script>
+
+    <!-- table-data -->
+    <script src="../media/js/pages/table-data.js"></script>
+
+    <!-- custom scripts -->
+    <script src="../media/js/main.js"></script>
+    
+</body>
+
+
+</html>
