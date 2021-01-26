@@ -1,0 +1,13 @@
+server {
+        listen 80 default_server;
+        listen [::]:80 default_server;
+		server_name blacktoolz.duckdns.org www.blcktoolz.duckdns.org;
+		location = /favicon.ico { access_log off; log_not_found off; }
+		location /static/ {
+		root /home/elephant/Remote/Cryptotrade;
+		}
+		location / {
+		include proxy_params;
+		proxy_pass http://unix:/home/elephant/Remote/Cryptotrade/Cryptotrade.sock;
+		}
+}
