@@ -1,5 +1,5 @@
 [web]
-blacktoolz.duckdns.org
+www.blacktoolz.com
 
 [web:vars]
 ansible_connection=ssh

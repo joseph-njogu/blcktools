@@ -47,7 +47,7 @@
           state: directory
           path: Remote
       - name: Make server known host
-        command: ssh-keyscan blacktoolz.duckdns.org >> ~/.ssh/known_hosts
+        command: ssh-keyscan www.blacktoolz.com >> ~/.ssh/known_hosts
 
       - name: Pull project from github
         git:
@@ -137,7 +137,7 @@
           rule: allow
           name: Nginx Full
       - name: Obtain SSL certificate
-        shell: certbot  --nginx --noninteractive --agree-tos --email josephnjogu487@gmail.com -d blacktoolz.duckdns.org -d www.blacktoolz.duckdns.org
+        shell: certbot  --nginx --noninteractive --agree-tos --email josephnjogu487@gmail.com -d www.blacktoolz.com
         become: yes
       - name: Free port 80
         command: fuser -k 80/tcp
