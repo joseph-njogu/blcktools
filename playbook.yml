@@ -135,7 +135,7 @@
           rule: allow
           name: Nginx Full
       - name: Obtain SSL certificate
-        shell: certbot  --nginx --noninteractive --agree-tos --email josephnjogu487@gmail.com -d www.blacktoolz.com
+        shell: certbot  --nginx --noninteractive --agree-tos --email josephnjogu487@gmail.com -d blacktoolz.duckdns.org -d www.blacktoolz.duckdns.org
         become: yes
       - name: Free port 80
         command: fuser -k 80/tcp
