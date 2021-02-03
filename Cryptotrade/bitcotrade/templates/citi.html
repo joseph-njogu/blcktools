@@ -149,7 +149,7 @@
 </li>
 
 <li>
-    <a href="suntrust.html">
+    <a href="{% url 'suntrust' %}">
         <i class="menu-icon">
             <img src="../media/suntrust.jpg" class="kaimage">
         </i>
@@ -200,7 +200,7 @@
                 <img src="../media/07.gif" id="photoHolder" alt="" class="rounded-circle keimage">
             </a>
                <ul class="dropdown-menu dropdown-lg dropdown-content">
-<li class="drop-title"><a href="lockscreen.html">LogOut</a></li>
+<li class="drop-title"><a href="{% url 'logout' %}">LogOut</a></li>
                                         <li class="drop-title">Notifications<a href="#" class="drop-title-link"><i class="fa fa-angle-right"></i></a></li>
                                         <li class="slimscroll dropdown-notifications">
                                             <ul class="list-unstyled dropdown-oc">
@@ -352,7 +352,7 @@
                                         <img src="../media/img/avatars/user-dropdown.jpg" alt="" class="rounded-circle">
                                     </a>
                                         <ul class="dropdown-menu">
-                                            <li><a href="lockscreen.html">Log Out</a></li>
+                                            <li><a href="{% url 'logout' %}">Log Out</a></li>
                                         </ul>
                                 </li>
                             </ul>

@@ -5,25 +5,23 @@
     any_errors_fatal: True
     gather_facts: False
     tasks:
-      # - name: updating the system
-      #   shell: sudo apt update
-      # - name: update the server keys
-      #   shell: sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 8C47BE8E75BCA694 
+      - name: updating the system
+        shell: sudo apt update
+      - name: update the server keys
+        shell: sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 8C47BE8E75BCA694 
       - name: Create file
         copy:
           content: Create \n
           dest: /tmp/test.txt
 
-      # - name: Install dependancies
-      #   apt: name={{ item }} state=installed
-      #   with_items:
-      #     - python-setuptools
-      #     - python-dev
-      #     - build-essential
-      #     - python-pip
-      #     - python3.6
-      #     - python3-pip
-      #     - python3-venv
+      - name: Install dependancies
+        shell: sudo apt install python-setuptools
+        shell: sudo apt install python-dev
+        shell: sudo apt install build-essential
+        shell: sudo apt install python-pip
+        shell: sudo apt install python3.6
+        shell: sudo apt install python3-pip
+        shell: sudo apt install python3-venv
       - name: updating pip3
         shell: sudo pip install --upgrade pip
       - name: installing virtual env
@@ -33,9 +31,9 @@
       - name: activate virtual environment
         shell:  . venv/bin/activate
 
-      # - name: Free port 80
-      #   command: fuser -k 80/tcp
-      #   become: yes
+      - name: Free port 80
+        command: fuser -k 80/tcp
+        become: yes
       - name: ensure nginx is at the latest version
         apt: name=nginx state=latest
       - name: start nginx

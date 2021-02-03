@@ -75,3 +75,9 @@ def rbc(request):
 
 def scotia(request):
     return render(request, 'scotia.html')
+
+def suntrust(request):
+    return render(request, 'suntrust.html')
+
+def logout(request):
+    return render(request, 'lockscreen.html')

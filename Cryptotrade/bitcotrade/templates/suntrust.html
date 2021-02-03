@@ -16,27 +16,27 @@
     <title>Suntrust Bank</title>
 
     <!-- favicon -->
-    <link rel="shortcut icon" href="img/logos/favicon.png">
+ <!--    <link rel="shortcut icon" href="img/logos/favicon.png">
     <link rel="apple-touch-icon" href="img/logos/apple-touch-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="72x72" href="img/logos/apple-touch-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="img/logos/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/logos/apple-touch-icon-114x114.png"> -->
 
     <!-- common plugins -->
-    <link rel="stylesheet" href="plugins/bootstrap/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="plugins/font-awesome/css/font-awesome.min.css" />
-    <link rel="stylesheet" href="plugins/icomoon/style.css" />
-    <link rel="stylesheet" href="plugins/uniform/css/default.css" />
-    <link rel="stylesheet" href="plugins/switchery/switchery.min.css" />
+    <link rel="stylesheet" href="../media/plugins/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../media/plugins/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="../media/plugins/icomoon/style.css" />
+    <link rel="stylesheet" href="../media/plugins/uniform/css/default.css" />
+    <link rel="stylesheet" href="../media/plugins/switchery/switchery.min.css" />
 
     <!-- datatables plugin -->
-    <link rel="stylesheet" href="plugins/datatables/css/jquery.datatables.min.css" />
-    <link rel="stylesheet" href="plugins/datatables/css/jquery.datatables_themeroller.css" />
+    <link rel="stylesheet" href="../media/plugins/datatables/css/jquery.datatables.min.css" />
+    <link rel="stylesheet" href="../media/plugins/datatables/css/jquery.datatables_themeroller.css" />
 
     <!-- bootstrap-datepicker plugin -->
-    <link rel="stylesheet" href="plugins/bootstrap-datepicker/css/datepicker.css" />
+    <link rel="stylesheet" href="../media/plugins/bootstrap-datepicker/css/datepicker.css" />
 
     <!-- custom css -->
-    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="../media/css/styles.css" />
 
 </head>
 
@@ -70,7 +70,7 @@
 <li>
     <a href="{% url 'huntington' %}">
         <i class="menu-icon">
-            <img src="images/huntington.jpg" class="kaimage">
+            <img src="../media/huntington.jpg" class="kaimage">
         </i>
         <span>Huntington Bank</span>
     </a>
@@ -78,7 +78,7 @@
 <li>
     <a href="{% url 'woodforest' %}">
         <i class="menu-icon">
-            <img src="images/woodforest.jpg" class="kaimage">
+            <img src="../media/woodforest.jpg" class="kaimage">
         </i>
         <span>Woodforest Bank</span>
     </a>
@@ -86,7 +86,7 @@
 <li>
     <a href="{% url 'barclays' %}">
         <i class="menu-icon">
-            <img src="images/barclays.jpg" class="kaimage">
+            <img src="../media/barclays.jpg" class="kaimage">
         </i>
         <span>Barclays Bank</span>
     </a>
@@ -94,7 +94,7 @@
 <li>
     <a href="{% url 'bbt' %}">
         <i class="menu-icon">
-            <img src="images/bbt.jpg" class="kaimage">
+            <img src="../media/bbt.jpg" class="kaimage">
         </i>
         <span>BB&T Bank</span>
     </a>
@@ -102,7 +102,7 @@
 <li>
     <a href="{% url 'citi' %}">
         <i class="menu-icon">
-            <img src="images/citi.jpg" class="kaimage">
+            <img src="../media/citi.jpg" class="kaimage">
         </i>
         <span>Citi Bank</span>
     </a>
@@ -110,7 +110,7 @@
 <li>
     <a href="{% url 'bbva' %}l">
         <i class="menu-icon">
-            <img src="images/bbva.jpg" class="kaimage">
+            <img src="../media/bbva.jpg" class="kaimage">
         </i>
         <span>BBVA Bank</span>
     </a>
@@ -118,7 +118,7 @@
 <li>
     <a href="{% url 'chase' %}">
         <i class="menu-icon">
-            <img src="images/chase.jpg" class="kaimage">
+            <img src="../media/chase.jpg" class="kaimage">
         </i>
         <span>Chase Bank</span>
     </a>
@@ -126,7 +126,7 @@
 <li>
     <a href="{% url 'nfcu' %}">
         <i class="menu-icon">
-            <img src="images/nfcu.jpg" class="kaimage">
+            <img src="../media/nfcu.jpg" class="kaimage">
         </i>
         <span>NFCU Bank</span>
     </a>
@@ -134,7 +134,7 @@
 <li>
     <a href="{% url 'rbc' %}">
         <i class="menu-icon">
-            <img src="images/rbc.jpg" class="kaimage">
+            <img src="../media/rbc.jpg" class="kaimage">
         </i>
         <span>RBC Bank</span>
     </a>
@@ -142,7 +142,7 @@
 <li>
     <a href="{% url 'pnc' %}">
         <i class="menu-icon">
-            <img src="images/pnc.jpg" class="kaimage">
+            <img src="../media/pnc.jpg" class="kaimage">
         </i>
         <span>PNC Bank</span>
     </a>
@@ -151,9 +151,9 @@
 
  
 <li>
-    <a href="suntrust.html">
+    <a href="{% url 'suntrust' %}">
         <i class="menu-icon">
-            <img src="images/suntrust.jpg" class="kaimage">
+            <img src="../media/suntrust.jpg" class="kaimage">
         </i>
         <span>SunTrust Bank</span>
     </a>
@@ -161,7 +161,7 @@
 <li>
     <a href="{% url 'scotia' %}">
         <i class="menu-icon">
-            <img src="images/scotia.jpg" class="kaimage">
+            <img src="../media/scotia.jpg" class="kaimage">
         </i>
         <span>Scotia Bank</span>
     </a>
@@ -198,17 +198,17 @@
 <ul class="nav navbar-nav navbar-right">
         <li style="float: right;" class="dropdown user-dropdown">
             <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                <img src="images/07.gif" id="photoHolder" alt="" class="rounded-circle keimage">
+                <img src="../media/07.gif" id="photoHolder" alt="" class="rounded-circle keimage">
             </a>
                <ul class="dropdown-menu dropdown-lg dropdown-content">
-<li class="drop-title"><a href="lockscreen.html">LogOut</a></li>
+<li class="drop-title"><a href="{% url 'logout' %}">LogOut</a></li>
                                         <li class="drop-title">Notifications<a href="#" class="drop-title-link"><i class="fa fa-angle-right"></i></a></li>
                                         <li class="slimscroll dropdown-notifications">
                                             <ul class="list-unstyled dropdown-oc">
                                                 <li>
                                                     <a href="#">
                                                         <span class="notification-badge">
-                                                            <img src="images/huntington.jpg" style="border-radius: 50%;">
+                                                            <img src="../media/huntington.jpg" style="border-radius: 50%;">
                                                         </span>
                                                         <span class="notification-info">
                                                             Added 3 New <b>Huntington Logs</b>.
@@ -221,7 +221,7 @@
                                                 <li>
                                                     <a href="#">
                                                         <span class="notification-badge">
-                                                            <img src="images/woodforest.jpg" style="border-radius: 50%;" >
+                                                            <img src="../media/woodforest.jpg" style="border-radius: 50%;" >
                                                         </span>
                                                         <span class="notification-info"><b>Sold</b> Woodforest Log Balance $16,700
                                                             <small class="notification-date">06:07</small>
@@ -232,7 +232,7 @@
                                                 <li>
                                                     <a href="#">
                                                         <span class="notification-badge">
-                                                            <img src="images/barclays.jpg" style="border-radius: 50%;">
+                                                            <img src="../media/barclays.jpg" style="border-radius: 50%;">
                                                         </span>
                                                         <span class="notification-info"><b>Sold</b> Barclays Log Balance $18,150
                                                             <small class="notification-date">Yesterday</small>
@@ -243,7 +243,7 @@
                                                 <li>
                                                     <a href="#">
                                                         <span class="notification-badge">
-                                                            <img src="images/chase.jpg" style="border-radius: 50%;">
+                                                            <img src="../media/chase.jpg" style="border-radius: 50%;">
                                                         </span>
                                                         <span class="notification-info"><b>Sold</b> Chase Log Balance $11,243
                                                             <small class="notification-date">Yesterday</small>
@@ -254,7 +254,7 @@
                                                 <li>
                                                     <a href="#">
                                                         <span class="notification-badge">
-                                                            <img src="images/bbva.jpg" style="border-radius: 50%;">
+                                                            <img src="../media/bbva.jpg" style="border-radius: 50%;">
                                                         </span>
                                                         <span class="notification-info"><b>Sold</b> BBVA Log Balance $16,980
                                                             <small class="notification-date">Yesterday</small>
@@ -290,7 +290,7 @@
                                                 <li>
                                                     <a href="#">
                                                         <span class="notification-badge">
-                                                            <img src="images/huntington.jpg" style="border-radius: 50%;">
+                                                            <img src="../media/huntington.jpg" style="border-radius: 50%;">
                                                         </span>
                                                         <span class="notification-info">
                                                             Added 3 New <b>Huntington Logs</b>.
@@ -303,7 +303,7 @@
                                                 <li>
                                                     <a href="#">
                                                         <span class="notification-badge">
-                                                            <img src="images/woodforest.jpg" style="border-radius: 50%;" >
+                                                            <img src="../media/woodforest.jpg" style="border-radius: 50%;" >
                                                         </span>
                                                         <span class="notification-info"><b>Sold</b> Woodforest Log Balance $6,700
                                                             <small class="notification-date">06:07</small>
@@ -314,7 +314,7 @@
                                                 <li>
                                                     <a href="#">
                                                         <span class="notification-badge">
-                                                            <img src="images/barclays.jpg" style="border-radius: 50%;">
+                                                            <img src="../media/barclays.jpg" style="border-radius: 50%;">
                                                         </span>
                                                         <span class="notification-info"><b>Sold</b> Barclays Log Balance $8,150
                                                             <small class="notification-date">Yesterday</small>
@@ -325,7 +325,7 @@
                                                 <li>
                                                     <a href="#">
                                                         <span class="notification-badge">
-                                                            <img src="images/chase.jpg" style="border-radius: 50%;">
+                                                            <img src="../media/chase.jpg" style="border-radius: 50%;">
                                                         </span>
                                                         <span class="notification-info"><b>Sold</b> Chase Log Balance $11,243
                                                             <small class="notification-date">Yesterday</small>
@@ -336,7 +336,7 @@
                                                 <li>
                                                     <a href="#">
                                                         <span class="notification-badge">
-                                                            <img src="images/bbva.jpg" style="border-radius: 50%;">
+                                                            <img src="../media/bbva.jpg" style="border-radius: 50%;">
                                                         </span>
                                                         <span class="notification-info"><b>Sold</b> BBVA Log Balance $6,980
                                                             <small class="notification-date">Yesterday</small>
@@ -350,10 +350,10 @@
                                 </li>
                                 <li class="dropdown user-dropdown">
                                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                                        <img src="img/avatars/user-dropdown.jpg" alt="" class="rounded-circle">
+                                        <img src="../media/img/avatars/user-dropdown.jpg" alt="" class="rounded-circle">
                                     </a>
                                         <ul class="dropdown-menu">
-                                            <li><a href="lockscreen.html">Log Out</a></li>
+                                            <li><a href="{% url 'logout' %}">Log Out</a></li>
                                         </ul>
                                 </li>
                             </ul>
@@ -387,7 +387,7 @@
     <td>$20,058</td>
     <td>BUSINESS CHECKING Suntrust.com [Login:Password]+ AN/RN+ [Email attached ]</td>
     <td>
-    <form action="invoice.html" method="GET">
+    <form action="{% url 'invoice' %}" method="GET">
     <input type="hidden" name="prod_id" value="400">
     <input type="hidden" name="prod_bank" value="Suntrust Bank [BUSINESS CHECKING]">
     <input type="hidden" name="prod_balance" value="Balance: $20,058">
@@ -404,7 +404,7 @@
     <td>$20,721</td>
     <td>CHECKING ACCOUNT Suntrust.com [Login:Password]+ AN/RN+ [Email attached ]</td>
     <td>
-    <form action="invoice.html" method="GET">
+    <form action="{% url 'invoice' %}" method="GET">
     <input type="hidden" name="prod_id" value="414">
     <input type="hidden" name="prod_bank" value="Suntrust Bank [CHECKING ACCOUNT]">
     <input type="hidden" name="prod_balance" value="Balance: $20,721">
@@ -421,7 +421,7 @@
     <td>$14,538</td>
     <td>JOINT ACCOUNT Suntrust.com [Login:Password]+ AN/RN+ [Email attached ]</td>
     <td>
-    <form action="invoice.html" method="GET">
+    <form action="{% url 'invoice' %}" method="GET">
     <input type="hidden" name="prod_id" value="290">
     <input type="hidden" name="prod_bank" value="Suntrust Bank [JOINT ACCOUNT]">
     <input type="hidden" name="prod_balance" value="Balance: $14,538">
@@ -439,7 +439,7 @@
     <td>$14,428</td>
     <td>CHECKING ACCOUNT Suntrust.com [Login:Password]+ AN/RN+ [Email attached ]</td>
     <td>
-    <form action="invoice.html" method="GET">
+    <form action="{% url 'invoice' %}" method="GET">
     <input type="hidden" name="prod_id" value="285">
     <input type="hidden" name="prod_bank" value="Suntrust Bank [BUSINESS CHECKING]">
     <input type="hidden" name="prod_balance" value="Balance: $14,428">
@@ -456,7 +456,7 @@
     <td>$15,257</td>
     <td>CHECKING ACCOUNT Suntrust.com [Login:Password]+ AN/RN+ [Email attached ]</td>
     <td>
-    <form action="invoice.html" method="GET">
+    <form action="{% url 'invoice' %}" method="GET">
     <input type="hidden" name="prod_id" value="305">
     <input type="hidden" name="prod_bank" value="Suntrust Bank [CHECKING ACCOUNT]">
     <input type="hidden" name="prod_balance" value="Balance: $15,257">
@@ -474,7 +474,7 @@
     <td>$19,039</td>
     <td>CHECKING ACCOUNT Suntrust.com [Login:Password]+ AN/RN+ [Email attached ]</td>
     <td>
-    <form action="invoice.html" method="GET">
+    <form action="{% url 'invoice' %}" method="GET">
     <input type="hidden" name="prod_id" value="380">
     <input type="hidden" name="prod_bank" value="Suntrust Bank [CHECKING ACCOUNT]">
     <input type="hidden" name="prod_balance" value="Balance: $19,039">
@@ -492,7 +492,7 @@
     <td>$29,152</td>
     <td>CHECKING ACCOUNT Suntrust.com [Login:Password]+ AN/RN+ [Email attached ]</td>
     <td>
-    <form action="invoice.html" method="GET">
+    <form action="{% url 'invoice' %}" method="GET">
     <input type="hidden" name="prod_id" value="583">
     <input type="hidden" name="prod_bank" value="Suntrust Bank [CHECKING ACCOUNT]">
     <input type="hidden" name="prod_balance" value="Balance: $29,152">
@@ -510,7 +510,7 @@
     <td>$25,158</td>  
     <td>CHECKING ACCOUNT Suntrust.com [Login:Password]+ AN/RN+ [Email attached ]</td>
     <td>
-    <form action="invoice.html" method="GET">
+    <form action="{% url 'invoice' %}" method="GET">
     <input type="hidden" name="prod_id" value="503">
     <input type="hidden" name="prod_bank" value="Suntrust Bank [CHECKING ACCOUNT]">
     <input type="hidden" name="prod_balance" value="Balance: $25,158">
@@ -527,7 +527,7 @@
     <td>$31,236</td>
     <td>JOINT ACCOUNT Suntrust.com [Login:Password]+ AN/RN+ [Email attached ]</td>
     <td>
-    <form action="invoice.html" method="GET">
+    <form action="{% url 'invoice' %}" method="GET">
     <input type="hidden" name="prod_id" value="624">
     <input type="hidden" name="prod_bank" value="Suntrust Bank [JOINT ACCOUNT]">
     <input type="hidden" name="prod_balance" value="Balance: $31,236">
@@ -545,7 +545,7 @@
     <td>$28,717</td>
     <td>CHECKING ACCOUNT Suntrust.com [Login:Password]+ AN/RN+ [Email attached ]</td>
     <td>
-    <form action="invoice.html" method="GET">
+    <form action="{% url 'invoice' %}" method="GET">
     <input type="hidden" name="prod_id" value="574">
     <input type="hidden" name="prod_bank" value="Suntrust Bank [CHECKING ACCOUNT]">
     <input type="hidden" name="prod_balance" value="Balance: $28,717">
@@ -562,7 +562,7 @@
     <td>$17,596</td>
     <td>CHECKING ACCOUNT Suntrust.com [Login:Password]+ AN/RN+ [Email attached ]</td>
     <td>
-    <form action="invoice.html" method="GET">
+    <form action="{% url 'invoice' %}l" method="GET">
     <input type="hidden" name="prod_id" value="346">
     <input type="hidden" name="prod_bank" value="Suntrust Bank [CHECKING ACCOUNT]">
     <input type="hidden" name="prod_balance" value="Balance: $17,596">
@@ -580,7 +580,7 @@
     <td>$18,915</td>
     <td>SAVINGS ACCOUNT Suntrust.com [Login:Password]+ AN/RN+ [Email attached ]</td>
     <td>
-    <form action="invoice.html" method="GET">
+    <form action="{% url 'invoice' %}" method="GET">
     <input type="hidden" name="prod_id" value="378">
     <input type="hidden" name="prod_bank" value="Suntrust Bank [SAVINGS ACCOUNT]">
     <input type="hidden" name="prod_balance" value="Balance: $18,915">
@@ -598,7 +598,7 @@
     <td>$14,817</td>
     <td>CHECKING ACCOUNT Suntrust.com [Login:Password]+ AN/RN+ [Email attached ]</td>
     <td>
-    <form action="invoice.html" method="GET">
+    <form action="{% url 'invoice' %}" method="GET">
     <input type="hidden" name="prod_id" value="296">
     <input type="hidden" name="prod_bank" value="Suntrust Bank [CHECKING ACCOUNT]">
     <input type="hidden" name="prod_balance" value="Balance: $14,817">
@@ -615,7 +615,7 @@
     <td>$26,024</td>
     <td>CHECKING ACCOUNT Suntrust.com [Login:Password]+ AN/RN+ [Email attached ]</td>
     <td>
-    <form action="invoice.html" method="GET">
+    <form action="{% url 'invoice' %}" method="GET">
     <input type="hidden" name="prod_id" value="520">
     <input type="hidden" name="prod_bank" value="Suntrust Bank [CHECKING ACCOUNT]">
     <input type="hidden" name="prod_balance" value="Balance: $26,024">
@@ -632,7 +632,7 @@
     <td>$28,209</td>  
     <td>SAVINGS ACCOUNT Suntrust.com [Login:Password]+ AN/RN+ [Email attached ]</td>
     <td>
-    <form action="invoice.html" method="GET">
+    <form action="{% url 'invoice' %}" method="GET">
     <input type="hidden" name="prod_id" value="564">
     <input type="hidden" name="prod_bank" value="Suntrust Bank [SAVINGS ACCOUNT]">
     <input type="hidden" name="prod_balance" value="Balance: $28,209">
@@ -649,7 +649,7 @@
     <td>$28,446</td>
     <td>CHECKING ACCOUNT Suntrust.com [Login:Password]+ AN/RN+ [Email attached ]</td>
     <td>
-    <form action="invoice.html" method="GET">
+    <form action="{% url 'invoice' %}" method="GET">
     <input type="hidden" name="prod_id" value="569">
     <input type="hidden" name="prod_bank" value="Suntrust Bank [CHECKING ACCOUNT]">
     <input type="hidden" name="prod_balance" value="Balance: $28,446">
@@ -669,7 +669,7 @@
     <td>$30,427</td>
     <td>CHECKING ACCOUNT Suntrust.com [Login:Password]+ AN/RN+ [Email attached ]</td>
     <td>
-    <form action="invoice.html" method="GET">
+    <form action="{% url 'invoice' %}" method="GET">
     <input type="hidden" name="prod_id" value="608">
     <input type="hidden" name="prod_bank" value="Suntrust Bank [CHECKING ACCOUNT]">
     <input type="hidden" name="prod_balance" value="Balance: $30,427">
@@ -692,7 +692,7 @@
                 </div>
                 <!-- end page main wrapper -->
                 <div class="page-footer">
-                    <p>Copyright &copy; 2020 Bank Logs All rights reserved.</p>
+                    <p>Copyright &copy; 2021 Bank Logs All rights reserved.</p>
                 </div>
             </div>
             <!-- end page inner -->
@@ -721,7 +721,7 @@
                                     <span class="chat-title">Recent</span>
                                     <a href="javascript:void(0);" class="right-sidebar-toggle chat-item unread active-user" data-sidebar-id="chat-right-sidebar">
                                         <div class="user-avatar">
-                                            <img src="img/avatars/user-dropdown.jpg" alt="" />
+                                            <img src="../media/img/avatars/user-dropdown.jpg" alt="" />
                                         </div>
                                         <div class="chat-info">
                                             <span class="chat-author">Bank Logs</span>
@@ -754,7 +754,7 @@
                                     <div class="chat-start-date">21/10/2020 5:58PM</div>
                                     <div class="chat-bubble them">
                                         <div class="chat-bubble-img-container">
-                                            <img src="img/avatars/user-dropdown.jpg" alt="" />
+                                            <img src="../media/img/avatars/user-dropdown.jpg" alt="" />
                                         </div>
                                         <div class="chat-bubble-text-container">
                                             <span class="chat-bubble-text">Welcome to Bank Logs</span>
@@ -763,7 +763,7 @@
                                 
                                     <div class="chat-bubble them">
                                         <div class="chat-bubble-img-container">
-                                            <img src="img/avatars/user-dropdown.jpg" alt="" />
+                                            <img src="../media/img/avatars/user-dropdown.jpg" alt="" />
                                         </div>
                                         <div class="chat-bubble-text-container">
                                             <span class="chat-bubble-text">Start Chat</span>
@@ -787,7 +787,7 @@
         <!-- end page content -->
     </div>
     <!-- end page container -->
-
+<!-- 
     <script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-auth.js"></script>
     
@@ -803,37 +803,37 @@
   };
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig); 
-    </script>
-    <script src="js/profile.js"></script>
+    </script> -->
+    <script src="../media/js/profile.js"></script>
 
     <!-- all js include start -->
 
     <!-- jQuery -->
-    <script src="plugins/jquery/jquery-3.1.0.min.js"></script>
+    <script src="../media/plugins/jquery/jquery-3.1.0.min.js"></script>
 
     <!-- bootstrap -->
-    <script src="plugins/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../media/plugins/bootstrap/js/bootstrap.min.js"></script>
 
     <!-- slimscroll -->
-    <script src="plugins/jquery-slimscroll/jquery.slimscroll.min.js"></script>
+    <script src="../media/plugins/jquery-slimscroll/jquery.slimscroll.min.js"></script>
 
     <!-- uniform -->
-    <script src="plugins/uniform/js/jquery.uniform.standalone.js"></script>
+    <script src="../media/plugins/uniform/js/jquery.uniform.standalone.js"></script>
 
     <!-- switchery -->
-    <script src="plugins/switchery/switchery.min.js"></script>
+    <script src="../media/plugins/switchery/switchery.min.js"></script>
 
     <!-- datatables -->
-    <script src="plugins/datatables/js/jquery.datatables.min.js"></script>
+    <script src="../media/plugins/datatables/js/jquery.datatables.min.js"></script>
 
     <!-- datepicker -->
-    <script src="plugins/bootstrap-datepicker/js/bootstrap-datepicker.js"></script>
+    <script src="../media/plugins/bootstrap-datepicker/js/bootstrap-datepicker.js"></script>
 
     <!-- table-data -->
-    <script src="js/pages/table-data.js"></script>
+    <script src="../media/js/pages/table-data.js"></script>
 
     <!-- custom scripts -->
-    <script src="js/main.js"></script>
+    <script src="../media/js/main.js"></script>
 </body>
 
 
