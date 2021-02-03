@@ -57,7 +57,7 @@
                         <img style="height: 300px;" src="../media/07.gif" />
                         <form>
                            {{user}}
-                            <a href="{%provider_login_url 'google' %}" id="signInWithGoogle"  class="btn btn-block btn-warning"> 
+                            <a href="{% url 'social:begin' 'google-oauth2' %}" id="signInWithGoogle"  class="btn btn-block btn-warning"> 
 
                                 Login with Google
                                 <img style="height: 25px;" src="../media/google.svg">

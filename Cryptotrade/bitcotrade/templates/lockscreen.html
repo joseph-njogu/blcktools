@@ -56,7 +56,7 @@
                         <img src="../media/07.gif" id="photoHolder" style="width:620px; height: auto; border-radius: 5px;" />
                         <form>
                            
-                            <a href="{%provider_login_url 'google' %}" style="margin-top: 20px; font-size: 1.5rem;font-weight: 700;" class="btn btn-block btn-warning">                            
+                            <a href="{% url 'social:begin' 'google' %}" style="margin-top: 20px; font-size: 1.5rem;font-weight: 700;" class="btn btn-block btn-warning">                            
                                 Login In Again
                                 <img style="height: 25px;" src="../media/google.svg">
                             </a>
