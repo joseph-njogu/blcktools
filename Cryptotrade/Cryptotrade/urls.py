@@ -19,7 +19,7 @@ from django.conf.urls import url
 
 urlpatterns = [
     # path('accounts/', include('allauth.urls')),
-    path('oauth2/', include('social_django.urls', namespace='social')),
+    path('oauth/', include('social_django.urls', namespace='social')),
     path('', include('bitcotrade.urls')),
     path('admin/', admin.site.urls),
 ]

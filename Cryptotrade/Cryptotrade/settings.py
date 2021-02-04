@@ -166,8 +166,8 @@ AUTHENTICATION_BACKENDS = (
     'allauth.account.auth_backends.AuthenticationBackend',
 )
 
-SOCIAL_AUTH_GOOGLE_OAUTH2_KEY = "955388973949-udlln0p3t1g6fmk082prs3gu2va8dju3.apps.googleusercontent.com"
-SOCIAL_AUTH_GOOGLE_OAUTH2_SECRET = "tjA0JQTXNiz_29DLW45EK8MR"
+SOCIAL_AUTH_GOOGLE_OAUTH2_KEY = "955388973949-am0hraqnssdals3cdmicr2kkhvpi1tud.apps.googleusercontent.com"
+SOCIAL_AUTH_GOOGLE_OAUTH2_SECRET = "ZTI0PW_KijFgcdz_K4ZEWiC_"
 
 SOCIAL_AUTH_PIPELINE = (
     'social_core.pipeline.social_auth.social_details',
