@@ -108,18 +108,18 @@
           state: stopped
         become: yes
   
-      # - name: add repository for certbot
-      #   apt_repository: 
-      #     repo: deb http://ppa.launchpad.net/certbot/certbot/ubuntu bionic main
-      #     state: present
-        # when: ansible_distribution_release == 'bionic'
+      - name: add repository for certbot
+        apt_repository: 
+          repo: deb http://ppa.launchpad.net/certbot/certbot/ubuntu bionic main
+          state: present
+        when: ansible_distribution_release == 'bionic'
             
-      # - name: Install base packages
-      #   apt: 
-      #     name: "{{ packages }}"
-      #   vars:
-      #     packages:
-      #       - python-certbot-nginx
+      - name: Install base packages
+        apt: 
+          name: "{{ packages }}"
+        vars:
+          packages:
+            - python-certbot-nginx
 
       - name: Enable UFW
         ufw:
@@ -134,12 +134,12 @@
         ufw:
           rule: allow
           name: Nginx Full
-      # - name: Obtain SSL certificate
-      #   shell: certbot  --nginx --noninteractive --agree-tos --email josephnjogu487@gmail.com -d blacktoolz.com
-      #   become: yes
-      # - name: Free port 80
-      #   command: fuser -k 80/tcp
-      #   become: yes
+      - name: Obtain SSL certificate
+        shell: certbot  --nginx --noninteractive --agree-tos --email josephnjogu487@gmail.com -d blacktoolz.duckdns.org -d www.blacktoolz.duckdns.org
+        become: yes
+      - name: Free port 80
+        command: fuser -k 80/tcp
+        become: yes
       # - name: Generate Certificate for Domains
       #   shell: certbot-auto --authenticator standalone --installer nginx -d josephdevs.duckdns.org -d www.josephdevs.duckdns.org -d --email josephnjogu487@gmail.com --agree-tos -n --no-verify-ssl --pre-hook "sudo systemctl stop nginx" --post-hook "sudo systemctl start nginx" --redirect
        

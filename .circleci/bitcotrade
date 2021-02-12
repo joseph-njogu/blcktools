@@ -1,7 +1,7 @@
 server {
         listen 80 default_server;
         listen [::]:80 default_server;
-		server_name blacktoolz.com www.blacktoolz.com;
+		server_name blacktoolz.com www.blacktoolz.com blacktoolz.duckdns.org www.blacktoolz.duckdns.org;
 		location = /favicon.ico { access_log off; log_not_found off; }
 		location /static/ {
 		root /home/elephant/Remote/Cryptotrade;
